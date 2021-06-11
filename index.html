@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="#">
+    <title>Trivia</title>
+
+	
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+
+        </header>
+        <div class="cabecera">
+            <a href="#instrucciones" class="btn reglas">¿Cómo jugar?</a>
+        </div>
+        <main>
+            <section class="bienvenida">
+                <div class="primera">
+                    <h1>¿QUE TAN COLOMBIANO ERES?</h1>
+                    <div class="input">
+                        <label for="">Nombre:</label>
+                        <input type="text" placeholder="escribe aquí" id="casilla">
+                        <a href="#segunda" onclick= "saludar()" class="btn btn-jugar" id="jugar">¡Comencemos!</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="segunda" id="segunda">
+                <div>
+                    <!-- <h2>Segunda sección</h2> -->
+                    <!--Contenedor vacío-->
+                    <div id="contenedor"></div>
+                </div>
+
+                <div class="categoria" id="categoria">
+                    <div id="tarjeta1">
+                        <img src="img/bandeja1.jpg" id="comida" alt="comida">
+                        <a href="#tercera" class=" btn btn-gastronomia" id="gastronomia"
+                            onclick="mostrarQuestionario1()">Gastronomía</a>
+                    </div>
+                    <div id="tarjeta2">
+                        <img src="img/sitios3.jpg" id="sitios" alt="lugares">
+                        <a href="#cuarta" class="btn btn-sitios" id="turismo"
+                            onclick="mostrarQuestionario2()">Turismo</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tercera" id="tercera">
+                <div>
+                    <h2>Tercera sección</h2>
+                    <h2>preguntas sobre gastronomías</h2>
+                    <hr>
+
+                    <form style="font:normal 16px sans-serif">
+
+                        <p class="pregunta">  1. Bandeja paisa.</p>
+                        <p class="pregunta1"><input type="radio" name="pregunta1" id="p11"> Pollo guisado.</p>
+                        <p class="pregunta1"><input type="radio" name="pregunta1" id="p12"> Frijoles,chorizo,
+                            chicharron.
+                        </p>
+                        <p class="pregunta1"><input type="radio" name="pregunta1" id="p13"> Pasta con pesto.</p>
+
+                        <p class="pregunta">  2. Lechona.</p>
+                        <p class="pregunta2"><input type="radio" name="pregunta2" id="p21"> Mezcla de cerdo desmechado,
+                            garbanzos y arroz .</p>
+                        <p class="pregunta2"><input type="radio" name="pregunta2" id="p22"> Sopa con Leche y especias.
+                        </p>
+                        <p class="pregunta2"><input type="radio" name="pregunta2" id="p23"> Ensalada de frutas.</p>
+
+                        <p class="pregunta">  3. Ajiaco.</p>
+                        <p class="pregunta3"><input type="radio" name="pregunta3" id="p31"> Carne estofada.</p>
+                        <p class="pregunta3"><input type="radio" name="pregunta3" id="p32"> Sopa de lentejas.</p>
+                        <p class="pregunta3"><input type="radio" name="pregunta3" id="p33"> Sopa blanca de pollo, papa,
+                            maiz
+                            y crema.</p>
+
+                        <p class="pregunta">4. Sancocho.</p>
+                        <p class="pregunta4"><input type="radio" name="pregunta4" id="p41"> Maiz y arroz sofrio.</p>
+                        <p class="pregunta4"><input type="radio" name="pregunta4" id="p42"> Sopa que contiene carne/
+                            pollo, yuca, papas, platano.</p>
+                        <p class="pregunta4"><input type="radio" name="pregunta4" id="p43"> Pasta con crema blanca y
+                            choclo.
+                        </p>
+
+
+                        <p class="pregunta">5. Changua.</p>
+                        <p class="pregunta5"><input type="radio" name="pregunta5" id="p51"> Sopa de desayuno con leche,
+                            huevo,cebolla y cilantro.</p>
+                        <p class="pregunta5"><input type="radio" name="pregunta5" id="p52"> Arroz con maricos.</p>
+                        <p class="pregunta5"><input type="radio" name="pregunta5" id="p53"> Ensalada de chayotes y
+                            rabanos.
+                        </p>
+
+
+                        <p class="pregunta">6. Fritanga.</p>
+                        <p class="pregunta6"><input type="radio" name="pregunta6" id="p61"> Pollo frito con papas
+                            francesas.
+                        </p>
+                        <p class="pregunta6"><input type="radio" name="pregunta4" id="p62"> Pescado frito con patacones.
+                        </p>
+                        <p class="pregunta6"><input type="radio" name="pregunta6" id="p63"> Variedad de carnes a la
+                            parrilla.</p>
+
+                        <p class="pregunta">7. Hormigas culonas.</p>
+                        <p class="pregunta7"><input type="radio" name="pregunta7" id="p71"> Mezcla de frutos secos
+                            cortados
+                            en trozos y bañados en caramelo.</p>
+                        <p class="pregunta7"><input type="radio" name="pregunta7" id="p72"> Hormigas grandes fritas o
+                            asadas
+                            con sal</p>
+                        <p class="pregunta7"><input type="radio" name="pregunta7" id="p73"> Aperitivo hecho en
+                            vegetales.
+                        </p>
+
+                        <p class="pregunta">8. Tamales.</p>
+                        <p class="pregunta8"><input type="radio" name="pregunta8" id="p81"> Sopa agria tipica del cauca.
+                        </p>
+                        <p class="pregunta8"><input type="radio" name="pregunta8" id="p82"> Envueltos de harinade yuca y
+                            queso.</p>
+                        <p class="pregunta8"><input type="radio" name="pregunta8" id="p83"> Harina de maiz envuelto en
+                            hojas
+                            de platano y hecho a base de carne o pollo y vegetales</p>
+                        <hr>
+
+                        <h2 id="resultado"> Aciertos:0 </h2>
+                        <p><input type="button" value=" RESULTADO" class="btn resultado" onclick="resultado()" /></p>
+
+                    </form>
+                </div>
+            </section>
+
+          
+
+            <!-- CUARTA PARTE , LUGARES TURISTICOS -->
+
+            <section class="cuarta" id="cuarta">
+                <div>
+                    <h2>LUGARES TURISTICOS DE COLOMBIA</h2>
+                    <hr>
+
+                    <form style="font:normal 16px sans-serif">
+
+                        <hr>
+
+                        <p>1. ¿Donde se ubica el desierto de la tatacoa?</p>
+                        <p class="pregunta1"><input type="radio" name="pregunta1" id="q11"> Tolima.</p>
+                        <p class="pregunta1"><input type="radio" name="pregunta1" id="q12"> Casanare.</p>
+                        <p class="pregunta1"><input type="radio" name="pregunta1" id="q13"> Huila.</p>
+
+                        <p>2. La laguna de tota es conocida por:</p>
+                        <p class="pregunta2"><input type="radio" name="pregunta2" id="q21"> ser inmensa.</p>
+                        <p class="pregunta2"><input type="radio" name="pregunta2" id="q22"> su playa blanca.</p>
+                        <p class="pregunta2"><input type="radio" name="pregunta2" id="q23">Por que tiene peces de
+                            colores.</p>
+
+                        <p>3. Caño cristales es:</p>
+                        <p class="pregunta3"><input type="radio" name="pregunta3" id="q31"> Un lago.</p>
+                        <p class="pregunta3"><input type="radio" name="pregunta3" id="q32"> Una montaña.</p>
+                        <p class="pregunta3"><input type="radio" name="pregunta3" id="q33"> Un rio.</p>
+
+                        <p>4. Parque nacional del Chicamocha es un parque:</p>
+                        <p class="pregunta4"><input type="radio" name="pregunta4" id="q41"> De diversiones.</p>
+                        <p class="pregunta4"><input type="radio" name="pregunta4" id="q42"> Ecológico.</p>
+                        <p class="pregunta4"><input type="radio" name="pregunta4" id="q43"> Acuático.</p>
+
+
+                        <p>5. De donde es el Castillo de San Felipe:</p>
+                        <p class="pregunta5"><input type="radio" name="pregunta5" id="q51"> Cartagena.</p>
+                        <p class="pregunta5"><input type="radio" name="pregunta5" id="q52"> Barranquilla.</p>
+                        <p class="pregunta5"><input type="radio" name="pregunta5" id="q53"> Bogotá.</p>
+
+
+                        <p>6. “Vamos a bailar salsa” en que ciudad piensas:</p>
+                        <p class="pregunta6"><input type="radio" name="pregunta6" id="q61"> Medellín.</p>
+                        <p class="pregunta6"><input type="radio" name="pregunta6" id="q62"> Pereira.</p>
+                        <p class="pregunta6"><input type="radio" name="pregunta6" id="q63"> Cali.</p>
+
+                        <p>7. El Festival Folclórico, Reinado Nacional del Bambuco de que región es:</p>
+                        <p class="pregunta7"><input type="radio" name="pregunta7" id="q71"> Tolima.</p>
+                        <p class="pregunta7"><input type="radio" name="pregunta7" id="q72"> Caquetá.</p>
+                        <p class="pregunta7"><input type="radio" name="pregunta7" id="q73"> Huila.</p>
+
+                        <p>8. Santuario Nuestra Señora de las Lajas en donde queda ubicado?</p>
+                        <p class="pregunta8"><input type="radio" name="pregunta8" id="q81"> Nariño.</p>
+                        <p class="pregunta8"><input type="radio" name="pregunta8" id="q82"> Manizales.</p>
+                        <p class="pregunta8"><input type="radio" name="pregunta8" id="q83"> Meta.</p>
+
+                        <hr>
+                        <h2 id="resultado2">Aciertos: 0</h2>
+                        <p> <input type="button" value=" RESULTADO" class="btn resultado" onclick="resultado2()" /></p>
+
+                    </form>
+                </div>
+            </section>
+
+
+            <section class="instrucciones" id="instrucciones" style= "font:normal 16px sans-serif">
+                <div>
+                    <h2>CÓMO JUGAR</h2>
+                    <ul>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae excepturi consectetur,
+                            assumenda
+                            temporibus libero similique optio ullam deserunt harum.</li>
+                        <br>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae accusamus velit at magnam
+                            ipsam
+                            sapiente quos mollitia qui, modi similique aspernatur possimus consequuntur.</li>
+                        <br>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae ipsam
+                            accusamus
+                            omnis autem nisi!</li>
+                    </ul>
+                    <br>
+              
+                        <a href="#header" class="btn regreso" id="regreso"> Regresar </a>
+              
+                </div>
+            </section>
+
+            <!-- <section class="instrucciones" id="instrucciones">
+            <div>
+                <h2>CÓMO JUGAR</h2>
+                <ul>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae excepturi consectetur, assumenda
+                        temporibus libero similique optio ullam deserunt harum.</li>
+                    <br>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae accusamus velit at magnam ipsam
+                        sapiente quos mollitia qui, modi similique aspernatur possimus consequuntur.</li>
+                    <br>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae ipsam accusamus
+                        omnis autem nisi!</li>
+                </ul>
+            </div>
+        </section> -->
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
