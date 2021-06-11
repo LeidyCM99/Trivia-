@@ -2,7 +2,7 @@
 
 const nombre = '';
 
-window.onload = function saludar() {
+ function saludar() {
     const nombre = document.getElementById('casilla');
     const contenedor = document.getElementById('contenedor');
     contenedor.textContent = '¡Hola '+ nombre.value +' ! Escoje tu categoría';
@@ -11,30 +11,30 @@ window.onload = function saludar() {
 //////////////////////////////////////////
 // Función para mostrar el cuestionario sobre Gastronomía
 
-function mostrarQuestionario1() {
+// function mostrarQuestionario1() {
     
-    const questionario1 = document.getElementById('tercera').style.display;
-    console.log(questionario1);
-        if (questionario1 == 'none' || questionario1 == '') {
-            document.getElementById('tercera').style.display = 'block'
-        }else{
-            document.getElementById('tercera').style.display = 'none'
-        }
+//     const questionario1 = document.getElementById('tercera');
+    
+//         if (questionario1 == 'none' || questionario1 == '') {
+//             document.getElementById('tercera').style.display = 'block'
+//         }else{
+//             document.getElementById('tercera').style.display = 'none'
+//         }
 
-    const categoria = document.getElementById('categoria').style.display;
-        if (categoria == 'block') {
-            document.getElementById('categoria').style.display = 'none'
-        }else{
-            document.getElementById('categoria').style.display = 'block'
-        }
-}
+//     const categoria = document.getElementById('categoria').style.display;
+//         if (categoria == 'block') {
+//             document.getElementById('categoria').style.display = 'none'
+//         }else{
+//             document.getElementById('categoria').style.display = 'block'
+//         }
+// }
 
 
 //////////////////////////////////////////
 // Función para mostrar el cuestionario sobre Turismo
 
 function mostrarQuestionario2() {
-    console.log("---------------")
+   
     const questionario2 = document.getElementById('cuarta').style.display;
         if (questionario2 == 'none' || questionario2 == '') {
             document.getElementById('cuarta').style.display = 'block'
@@ -56,7 +56,7 @@ function mostrarQuestionario2() {
 
 function resultado() {
 
-    var p1, p2, p3, p4, p5, p6, p7, p8, nota;
+    let p1, p2, p3, p4, p5, p6, p7, p8, nota;
     
     // PREGUNTA 1 
     
@@ -129,9 +129,9 @@ function resultado() {
     
     document.getElementById('resultado').innerHTML="Aciertos: "+nota;
     
-    rs=confirm("continuar");
+    // rs=confirm("continuar");
     
-    if (rs==false) {document.forms[0].reset();location.reload()}
+    // if (rs==false) {document.forms[0].reset();location.reload()}
     
     }
 
@@ -210,13 +210,13 @@ function resultado2() {
     // Sumatoria
     
     nota=q1+q2+q3+q4+q5+q6+q7+q8;
-    console.log(q1+''+q2+''+q3+''+q4+''+q5+''+q6+''+q7+''+q8);
+    // console.log(q1+''+q2+''+q3+''+q4+''+q5+''+q6+''+q7+''+q8);
     
     document.getElementById('resultado2').innerHTML=" Aciertos: "+nota;
     
-    rs=confirm("continuar");
+    // rs=confirm("continuar");
     
-    if (rs==false) {document.forms[0].reset();location.reload()}
+    // if (rs==false) {document.forms[0].reset();location.reload()}
     
     } 
 

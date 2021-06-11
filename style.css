@@ -204,7 +204,7 @@ p {
 }
 
 .tercera {
-    display: none;
+    /* display: none; */
     width: 900px;
     height: auto;
     margin: 0 auto 200px;
@@ -212,7 +212,7 @@ p {
     /* border: 2px solid red; */
 }
 .cuarta {
-    display: none;
+    /* display: none; */
     width: 900px;
     height: auto;
     margin: 0 auto 200px;
